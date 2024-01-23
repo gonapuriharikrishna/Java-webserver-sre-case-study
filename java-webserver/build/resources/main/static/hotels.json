@@ -1,0 +1,471 @@
+{
+  "data": {
+    "rs": {
+      "accommodations": [
+        {
+          "id": {
+            "id": 52972,
+            "ns": 100
+          },
+          "name": {
+            "value": "B&B Hotel Köln-West",
+            "lang": "en",
+            "dir": "ltr"
+          },
+          "accommodationType": {
+            "value": "Hotel",
+            "lang": "en-GB",
+            "dir": "ltr"
+          },
+          "accommodationTypeId": 2,
+          "advertiserInfo": null,
+          "searchReflectionConcepts": [],
+          "locality": {
+            "value": "Köln",
+            "lang": "de",
+            "dir": "ltr"
+          },
+          "localityId": 6639,
+          "distanceInMeters": null,
+          "constructionYear": 2003,
+          "conceptDistance": [
+            {
+              "id": 12778,
+              "ns": 500,
+              "distance_meters": 8132,
+              "name": {
+                "value": "Kölner Dom",
+                "lang": "de",
+                "dir": "ltr"
+              }
+            }
+          ],
+          "images": {
+            "main": "/itemimages/52/97/52972_v7",
+            "count": 17,
+            "mainUri": "https://imgio.trivago.com/itemimages/52/97/52972_v7_irect.jpeg",
+            "retinaMainUri": "https://imgio.trivago.com/itemimages/52/97/52972_v7_irect@2x.jpeg"
+          },
+          "hasSpecialOffer": false,
+          "rating": {
+            "basedOn": 2901,
+            "category": 0,
+            "superior": false,
+            "overallLiking": 8003,
+            "overallLikingIndex": 4
+          },
+          "geocode": {
+            "lng": 6.8461,
+            "lat": 50.9225
+          },
+          "deals": {
+            "bestPrice": {
+              "ptr": null,
+              "dealId": "98c68a90",
+              "groupId": 412,
+              "partnerId": 412,
+              "name": {
+                "value": "B&B Hotels",
+                "lang": "und",
+                "dir": "ltr"
+              },
+              "priceAttributes": [
+                {
+                  "nsid": {
+                    "id": 1,
+                    "ns": 412
+                  },
+                  "name": {
+                    "value": "kostenlose Stornierung",
+                    "lang": "de",
+                    "dir": "ltr"
+                  }
+                },
+                {
+                  "nsid": {
+                    "id": 1,
+                    "ns": 402
+                  },
+                  "name": null
+                }
+              ],
+              "displayPrice": "57€",
+              "displayPricePerStay": "57€",
+              "price": 57,
+              "pricePerStay": 57,
+              "euroCentPrice": 5670,
+              "isDirectConnect": true,
+              "displayAttributes": [6,1]
+            },
+            "alternative": [],
+            "minPrice": {
+              "displayPrice": "57€",
+              "price": 57,
+              "displayPricePerStay": "57€",
+              "pricePerStay": 57
+            }
+          },
+          "topRated": false,
+          "ratingAspects": [
+            {
+              "id": 1,
+              "ns": 112,
+              "value": 7641
+            },
+            {
+              "id": 2,
+              "ns": 112,
+              "value": 8660
+            },
+            {
+              "id": 3,
+              "ns": 112,
+              "value": 7794
+            }
+          ],
+          "highlights": {
+            "mp": null,
+            "usp": [
+              {
+                "score": 8375,
+                "rank": null,
+                "nsid": {
+                  "id": 7,
+                  "ns": 132
+                }
+              }
+            ],
+            "tr": null
+          },
+          "bpp": null
+        },
+        {
+          "id": {
+            "id": 6475,
+            "ns": 100
+          },
+          "name": {
+            "value": "Hotel Flandrischer Hof",
+            "lang": "de",
+            "dir": "ltr"
+          },
+          "accommodationType": {
+            "value": "Hotel",
+            "lang": "en-GB",
+            "dir": "ltr"
+          },
+          "accommodationTypeId": 2,
+          "advertiserInfo": null,
+          "searchReflectionConcepts": [],
+          "locality": {
+            "value": "Köln",
+            "lang": "de",
+            "dir": "ltr"
+          },
+          "localityId": 6639,
+          "distanceInMeters": null,
+          "constructionYear": 1984,
+          "conceptDistance": [
+            {
+              "id": 12778,
+              "ns": 500,
+              "distance_meters": 1466,
+              "name": {
+                "value": "Kölner Dom",
+                "lang": "de",
+                "dir": "ltr"
+              }
+            }
+          ],
+          "images": {
+            "main": "/itemimages/64/75/6475_v8",
+            "count": 40,
+            "mainUri": "https://imgio.trivago.com/itemimages/64/75/6475_v8_irect.jpeg",
+            "retinaMainUri": "https://imgio.trivago.com/itemimages/64/75/6475_v8_irect@2x.jpeg"
+          },
+          "hasSpecialOffer": false,
+          "rating": {
+            "basedOn": 2685,
+            "category": 3,
+            "superior": true,
+            "overallLiking": 7951,
+            "overallLikingIndex": 4
+          },
+          "geocode": {
+            "lng": 6.93822,
+            "lat": 50.93726
+          },
+          "deals": {
+            "bestPrice": {
+              "ptr": null,
+              "dealId": "e0cc72b9",
+              "groupId": 80,
+              "partnerId": 1672,
+              "name": {
+                "value": "rc_HotelNetSolutions",
+                "lang": "und",
+                "dir": "ltr"
+              },
+              "priceAttributes": [
+                {
+                  "nsid": {
+                    "id": 2,
+                    "ns": 413
+                  },
+                  "name": {
+                    "value": "vor Ort bezahlen",
+                    "lang": "de",
+                    "dir": "ltr",
+                    "__typename": "rsName"
+                  }
+                },
+                {
+                  "nsid": {
+                    "id": 1,
+                    "ns": 412
+                  },
+                  "name": {
+                    "value": "kostenlose Stornierung",
+                    "lang": "de",
+                    "dir": "ltr"
+                  }
+                },
+                {
+                  "nsid": {
+                    "id": 1,
+                    "ns": 402
+                  },
+                  "name": null
+                }
+              ],
+              "displayPrice": "94€",
+              "displayPricePerStay": "94€",
+              "price": 94,
+              "pricePerStay": 94,
+              "euroCentPrice": 9400,
+              "isDirectConnect": true,
+              "displayAttributes": [6,1]
+            },
+            "alternative": [
+              {
+                "ptr": null,
+                "dealId": "88f746e8",
+                "groupId": 80,
+                "partnerId": 1672,
+                "name": {
+                  "value": "rc_HotelNetSolutions",
+                  "lang": "und",
+                  "dir": "ltr"
+                },
+                "priceAttributes": [
+                  {
+                    "nsid": {
+                      "id": 2,
+                      "ns": 413
+                    },
+                    "name": null
+                  },
+                  {
+                    "nsid": {
+                      "id": 1,
+                      "ns": 412
+                    },
+                    "name": null
+                  },
+                  {
+                    "nsid": {
+                      "id": 1,
+                      "ns": 402
+                    },
+                    "name": null
+                  }
+                ],
+                "displayPrice": "94€",
+                "displayPricePerStay": null,
+                "price": 94,
+                "pricePerStay": null,
+                "euroCentPrice": 9400,
+                "isDirectConnect": true,
+                "displayAttributes": [6,3]
+              },
+              {
+                "ptr": null,
+                "dealId": "ca0192b1",
+                "groupId": 277,
+                "partnerId": 277,
+                "name": {
+                  "value": "thomascook.de",
+                  "lang": "und",
+                  "dir": "ltr"
+                },
+                "priceAttributes": [
+                  {
+                    "nsid": {
+                      "id": 2,
+                      "ns": 411
+                    },
+                    "name": null
+                  },
+                  {
+                    "nsid": {
+                      "id": 1,
+                      "ns": 402
+                    },
+                    "name": null
+                  }
+                ],
+                "displayPrice": "98€",
+                "displayPricePerStay": null,
+                "price": 98,
+                "pricePerStay": null,
+                "euroCentPrice": 9800,
+                "isDirectConnect": null,
+                "displayAttributes": [3]
+              }
+            ],
+            "minPrice": {
+              "displayPrice": "94€",
+              "price": 94,
+              "displayPricePerStay": "94€",
+              "pricePerStay": 94
+            }
+          },
+          "topRated": false,
+          "ratingAspects": [
+            {
+              "id": 1,
+              "ns": 112,
+              "value": 7799
+            },
+            {
+              "id": 2,
+              "ns": 112,
+              "value": 8469
+            },
+            {
+              "id": 3,
+              "ns": 112,
+              "value": 7234
+            }
+          ],
+          "highlights": {
+            "mp": null,
+            "usp": [
+              {
+                "score": 8497,
+                "rank": null,
+                "nsid": {
+                  "id": 7,
+                  "ns": 132
+                }
+              }
+            ],
+            "tr": null
+          },
+          "bpp": {
+            "perc20": 7770,
+            "perc40": 8190,
+            "median": 8715
+          }
+        },
+        {
+          "id": {
+            "id": 12429158,
+            "ns": 100
+          },
+          "name": {
+            "value": "Gemütliche Ferienwohnung In Köln",
+            "lang": "en",
+            "dir": "ltr"
+          },
+          "accommodationType": {
+            "value": "Haus/Apartment",
+            "lang": "de",
+            "dir": "ltr"
+          },
+          "accommodationTypeId": 8,
+          "advertiserInfo": [
+            {
+              "advertiserNsid": {
+                "ns": 400,
+                "id": 2816
+              },
+              "isSuperHost": false,
+              "reviewCount": 52,
+              "reviewRating": 9400,
+              "reviewRatingIndex": 5
+            }
+          ],
+          "searchReflectionConcepts": [],
+          "locality": {
+            "value": "Köln",
+            "lang": "de",
+            "dir": "ltr"
+          },
+          "localityId": 6639,
+          "distanceInMeters": null,
+          "constructionYear": null,
+          "conceptDistance": null,
+          "images": {
+            "main": "/itemimages/12/42/12429158",
+            "count": 35,
+            "mainUri": "https://imgio.trivago.com/itemimages/12/42/12429158_irect.jpeg",
+            "retinaMainUri": "https://imgio.trivago.com/itemimages/12/42/12429158_irect@2x.jpeg"
+          },
+          "hasSpecialOffer": false,
+          "rating": {
+            "basedOn": 62,
+            "category": 0,
+            "superior": false,
+            "overallLiking": 8587,
+            "overallLikingIndex": 5
+          },
+          "geocode": {
+            "lng": 7.03541,
+            "lat": 50.90228
+          },
+          "deals": {
+            "bestPrice": {
+              "ptr": null,
+              "dealId": "3a8078e2",
+              "groupId": 2816,
+              "partnerId": 2816,
+              "name": {
+                "value": "Airbnb",
+                "lang": "und",
+                "dir": "ltr"
+              },
+              "priceAttributes": [
+                {
+                  "nsid": {
+                    "id": 1,
+                    "ns": 402
+                  },
+                  "name": null
+                }
+              ],
+              "displayPrice": "78€",
+              "displayPricePerStay": "78€",
+              "price": 78,
+              "pricePerStay": 78,
+              "euroCentPrice": 7800,
+              "isDirectConnect": null,
+              "displayAttributes": [1]
+            },
+            "alternative": [],
+            "minPrice": {
+              "displayPrice": "78€",
+              "price": 78,
+              "displayPricePerStay": "78€",
+              "pricePerStay": 78
+            }
+          },
+          "topRated": false,
+          "ratingAspects": null,
+          "highlights": null,
+          "bpp": null
+        }
+      ]
+    }
+  }
+}

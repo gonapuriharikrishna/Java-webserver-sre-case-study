@@ -1,0 +1,10 @@
+# Dockerfile
+FROM openjdk:11-jre-slim
+
+WORKDIR /app
+
+COPY java-webserver/build/libs/java-webserver.jar /app/java-webserver.jar
+
+EXPOSE 8080
+
+CMD ["java", "-Xmx64M", "-jar", "java-webserver.jar"]
