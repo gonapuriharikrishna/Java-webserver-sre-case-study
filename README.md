@@ -62,7 +62,7 @@ Follow these steps to deploy the microservice on Kubernetes:
    
    ![Alt text](images/image.png)
     
-**3. Deploying Application to K3d **
+**3. Deploying Application to K3d**
    As hinted in the doc 3d is a lightweight Kubernetes Distribution that can be used to create a simple 8s cluster and it also has the ability of pushing images to local container registry.'
 
    **3.1** Creating a Private Container Registry
