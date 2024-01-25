@@ -1,8 +1,8 @@
-****Deployment of Java Microservice on Kubernetes with Istio and Helm****
+# Deployment of Java Microservice on Kubernetes with Istio and Helm
 
 Welcome to the documentation for deploying a Java microservice application that provides hotel search results. This guide outlines the steps to deploy the application on Kubernetes using Istio Service Mesh and Helm Charts.
 
-Prerequisites
+### Prerequisites
 Before you begin, make sure you have the following software installed:
 
 1. Gradle 8.5
@@ -11,7 +11,7 @@ Before you begin, make sure you have the following software installed:
 4. Kubernetes 1.28.2
 5. K3d for local Kubernetes setup
 
-****Setup Instructions****
+### Setup Instructions
 **Gradle Installation**
 Download and install Gradle from the official website: Gradle Downloads. Ensure Gradle is added to your system's PATH.
 
@@ -26,7 +26,7 @@ Install K3d using Chocolatey (package manager):
 Install Helm using Chocolatey:
 ```choco install kubernetes-helm```
 
-**Setting up the Environment**
+### Setting up the Environment
 After installing the required software, set up your development environment:
 
 Unzip the file. 
