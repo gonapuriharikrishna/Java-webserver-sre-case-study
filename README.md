@@ -1,86 +1,43 @@
-Overview
-This project demonstrates the deployment of a Java microservices application on Kubernetes using Helm and Istio for service mesh capabilities. The project includes the following components:
+****Deployment of Java Microservice on Kubernetes with Istio and Helm****
 
-Java Application: A simple web server application built with Spring Boot.
-Docker: Dockerized the Java application for easy deployment.
-Kubernetes: Deployed the application on Kubernetes for container orchestration.
-Helm: Used Helm charts for packaging and deploying Kubernetes applications.
-Istio: Integrated Istio for advanced service mesh features.
+Welcome to the documentation for deploying a Java microservice application that provides hotel search results. This guide outlines the steps to deploy the application on Kubernetes using Istio Service Mesh and Helm Charts.
+
 Prerequisites
-Ensure the following tools are installed on your local machine:
+Before you begin, make sure you have the following software installed:
 
-Java Development Kit (JDK) 11
-Docker
-Gradle 6 (optional)
-Helm
-k3d (for local Kubernetes cluster)
-Istio (installed on the Kubernetes cluster)
-Build the Java Application
-Navigate to the java-webserver directory:
+1. Gradle 8.5
+2. Java 17
+3. Docker 24.0.7
+4. Kubernetes 1.28.2
+5. K3d for local Kubernetes setup
 
- 
-cd your-app/java-webserver
-Run Gradle to build the JAR file:
+****Setup Instructions****
+**Gradle Installation**
+Download and install Gradle from the official website: Gradle Downloads. Ensure Gradle is added to your system's PATH.
 
- 
-gradle bootJar
-Or, if using the provided gradlew:
+**Docker Installation**
+Install Docker from the official Docker website: Docker Install.
 
- 
-./gradlew bootJar
-The JAR file is generated in the build/libs/ directory.
+**Kubernetes and K3d Installation**
+Install K3d using Chocolatey (Windows package manager):
+>> choco install k3d
+Install Helm using Chocolatey:
+>> choco install kubernetes-helm
 
-Build Docker Image
-Navigate back to the project root:
+**Setting up the Environment**
+After installing the required software, set up your development environment:
 
- 
-cd your-app
-Build the Docker image:
+Unzip the file. 
+Navigate to the project directory
 
- 
-docker build -t your-image-name:tag .
-Deploy on Kubernetes with Helm
-Install k3d (if not installed):
+**Deploying the Microservice**
+Follow these steps to deploy the microservice on Kubernetes:
 
- 
-brew install k3d  # or use an alternative method for your OS
-Create a local Kubernetes cluster using k3d:
+1. Build the Microservice:
 
- 
-k3d cluster create your-cluster-name
-Install Istio on the Kubernetes cluster:
+ Use Gradle to build the microservice:
+ >> gradle bootJar
 
-Follow the official Istio installation guide.
-
-Deploy the application using Helm:
-
- 
-helm install your-app ./charts/your-app
-Apply Istio configurations (Gateway and VirtualService):
-
- 
-kubectl apply -f k8s/istio/
-Monitor the deployment:
-
- 
-kubectl get pods -w
-Test the Deployment
-After the pods are ready, run tests:
-
- 
-make test  # or use your preferred testing method
-Cleanup
-Uninstall the Helm chart:
-
- 
-make helm-uninstall  # or use `helm uninstall your-app`
-Delete the local Kubernetes cluster:
-
- 
-k3d cluster delete your-cluster-name
-Additional Notes
-Modify configurations and values in Helm charts as needed.
-Customize Istio configurations based on specific requirements.
-Refer to Helm and Istio documentation for advanced configurations and options.
-Feel free to reach out for any further clarification or assistance.
-
+2. Dockerize the Application:
+   Build a Docker image of your microservice:
+   
