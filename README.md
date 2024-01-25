@@ -56,15 +56,15 @@ Follow these steps to deploy the microservice on Kubernetes:
    To build the image run ```docker buildx build -t java-webserver .```
    This will create a docker image which can be used to run a container or in kubernetes cluster.
    
-   ![Alt text](image-1.png)
-   ![Alt text](image.png)
+   ![Alt text](images/image-1.png)
+   ![Alt text](images/image.png)
     
 3. Deploying Application to K3d 
    As hinted in the doc 3d is a lightweight Kubernetes Distribution that can be used to create a simple 8s cluster and it also has the ability of pushing images to local container registry.'
 
    3.1 Creating a Private Container Registry
       Run ```k3d registry create java-webserver-sre-registry --port 5050```
-      ![Alt text](image-2.png)
+      ![Alt text](images/image-2.png)
 
    3.2 Just to make it easier created the image again in the local registry 
    ```docker build -t k3d-java-webserver-sre-registry:5000/java-webserver:latest .```
@@ -83,8 +83,8 @@ Follow these steps to deploy the microservice on Kubernetes:
 
    3.6 Get Pods
    ```kubectl get pods```
-   ![Alt text](image-3.png)
-   ![Alt text](image-4.png)
+   ![Alt text](images/image-3.png)
+   ![Alt text](images/image-4.png)
 
 4. Setting up Helm charts 
 ```helm create java-webserver-charts  ``` 
@@ -104,21 +104,21 @@ Follow these steps to deploy the microservice on Kubernetes:
    ```helm install isto-base istio/base -n istio-system --create-namespace```
    ```helm install istiod istio/istiod -n istio-system --wait```
 
-   ![Alt text](image-5.png)
+   ![Alt text](images/image-5.png)
 
 6. Check Deployments and Services
    ```kubectl get pods```
    ```kubectl get services```
 
-   ![Alt text](image-6.png)
+   ![Alt text](images/image-6.png)
 
 7. Finally after spinning up the pods we can access are microservice hich means the microservice has been deployed to Kubernetes Yeey!!!!
    ```kubectl port-forward service/java-webserver-service 8080:8080```
-   ![Alt text](image-7.png)
+   ![Alt text](images/image-7.png)
 
-   ![Alt text](image-8.png)
+   ![Alt text](images/image-8.png)
 
-   ![Alt text](image-9.png)
+   ![Alt text](images/image-9.png)
 
 8. Now testing by running 100 requests aginst the /hotels endpoint
    It would have super easy if it were my mac but in windows its difficult
@@ -131,7 +131,7 @@ Follow these steps to deploy the microservice on Kubernetes:
    which did the work for me, thanks to that.
 
    I ran about 108 requests confirmed from /metrics end point
-   ![Alt text](image-10.png)
+   ![Alt text](images/image-10.png)
    
 
 
