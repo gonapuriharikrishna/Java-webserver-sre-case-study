@@ -106,6 +106,16 @@ Follow these steps to deploy the microservice on Kubernetes:
 
    ![Alt text](images/image-5.png)
 
+   While trying to make changes using helm values, it was continously failing even after spending considerable time couldn't figure out the reason there for 
+   ```helm install myrelease ./java-webserver-charts --set appName=java-webserver-deployment --debug --dry-run```
+   ![Alt text](images/image11.png)
+
+   ```kubectl apply -f templates/deployment.yaml```
+   ```kubectl apply -f templates/service.yaml```
+   ```kubectl apply -f templates/istio-gateway.yaml```
+   ```kubectl apply -f templates/istio-virtualservice.yaml```
+
+
 6. Check Deployments and Services
    ```kubectl get pods```
    ```kubectl get services```
@@ -132,6 +142,14 @@ Follow these steps to deploy the microservice on Kubernetes:
 
    I ran about 108 requests confirmed from /metrics end point
    ![Alt text](images/image-10.png)
+
+Makefile
+
+Please find the Makefile in java-webserver-charts/templates/Makefile
+and execute this commands
+make apply
+make port-forward   # Wait for the pods to come up completely
+make test
    
 
 
