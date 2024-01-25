@@ -127,7 +127,7 @@ Follow these steps to deploy the microservice on Kubernetes:
 
 **7. Finally after spinning up the pods we can access our microservice which means the microservice has been deployed to Kubernetes Yeey!!!!**
    ```kubectl port-forward service/java-webserver-service 8080:8080```
-   ![Alt text](images/image-7.png)
+   ![Deployed-Kubernetes](images/image-7.png)
 
    ![Alt text](images/image-8.png)
 
