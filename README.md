@@ -147,9 +147,10 @@ Follow these steps to deploy the microservice on Kubernetes:
 
 Please find the Makefile in java-webserver-charts/templates/Makefile
 and execute this commands
-make apply
-make port-forward   # Wait for the pods to come up completely
-make test
+
+```make apply```
+```make port-forward```   # Wait for the pods to come up completely
+```make test```
    
 
 
