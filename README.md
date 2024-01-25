@@ -19,10 +19,12 @@ Download and install Gradle from the official website: Gradle Downloads. Ensure 
 Install Docker from the official Docker website: Docker Install.
 
 **Kubernetes and K3d Installation**
-Install K3d using Chocolatey (Windows package manager):
->> choco install k3d
+
+Install K3d using Chocolatey (package manager):
+```choco install k3d```
+
 Install Helm using Chocolatey:
->> choco install kubernetes-helm
+```choco install kubernetes-helm```
 
 **Setting up the Environment**
 After installing the required software, set up your development environment:
@@ -36,7 +38,7 @@ Follow these steps to deploy the microservice on Kubernetes:
 1. Build the Microservice:
 
  Use Gradle to build the microservice:
- >> gradle bootJar
+ ```gradle bootJar```
 
 2. Dockerize the Application:
    Build a Docker image of your microservice:
