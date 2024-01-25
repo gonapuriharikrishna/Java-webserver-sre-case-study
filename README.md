@@ -143,7 +143,7 @@ Follow these steps to deploy the microservice on Kubernetes:
    I ran about 108 requests confirmed from /metrics end point
    ![Alt text](images/image-10.png)
 
-Makefile
+## Makefile
 
 Please find the Makefile in java-webserver-charts/templates/Makefile
 and execute this commands
