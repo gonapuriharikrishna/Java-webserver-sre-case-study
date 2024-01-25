@@ -88,6 +88,55 @@ Follow these steps to deploy the microservice on Kubernetes:
 
 4. Setting up Helm charts 
 ```helm create java-webserver-charts  ``` 
+   4.1 java-webserver-charts/values.yaml
+       java-webserver-charts/charts.yaml
+       java-webserver-charts/templates
+       deployment.yaml
+       service.yaml
+       istio-gateway.yaml
+       istio-virtualservice.yaml
+
+5. Install Istio from official site
+   After multiple attempts also it was kind of very difficult to figure out a way to install istio on my windows machine
+   But finally used helm to spin up a istiod cluster
+
+   ```helm repo add istio https://istio-release.storage.googleapis.com/charts```
+   ```helm install isto-base istio/base -n istio-system --create-namespace```
+   ```helm install istiod istio/istiod -n istio-system --wait```
+
+   ![Alt text](image-5.png)
+
+6. Check Deployments and Services
+   ```kubectl get pods```
+   ```kubectl get services```
+
+   ![Alt text](image-6.png)
+
+7. Finally after spinning up the pods we can access are microservice hich means the microservice has been deployed to Kubernetes Yeey!!!!
+   ```kubectl port-forward service/java-webserver-service 8080:8080```
+   ![Alt text](image-7.png)
+
+   ![Alt text](image-8.png)
+
+   ![Alt text](image-9.png)
+
+8. Now testing by running 100 requests aginst the /hotels endpoint
+   It would have super easy if it were my mac but in windows its difficult
+   in mac I could have simply executed this
+   ```for i in {1..100}; do curl -s http://localhost:8080/hotels; sleep 0.1; done```
+
+   But windows its new ;)
+
+   Wrote a batch script testscript.bat
+   which did the work for me, thanks to that.
+
+   I ran about 108 requests confirmed from /metrics end point
+   ![Alt text](image-10.png)
+   
+
+
+       
+
    
 
 

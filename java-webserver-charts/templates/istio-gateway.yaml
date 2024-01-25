@@ -1,8 +1,7 @@
-# k8s/istio/gateway.yaml
 apiVersion: networking.istio.io/v1alpha3
 kind: Gateway
 metadata:
-  name: your-app-gateway
+  name: java-webserver-gateway
 spec:
   selector:
     istio: ingressgateway
@@ -12,4 +11,4 @@ spec:
         name: http
         protocol: HTTP
       hosts:
-        - "your-app.local"
+        - "*"
