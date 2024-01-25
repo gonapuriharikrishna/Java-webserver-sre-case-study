@@ -12,9 +12,6 @@ helm-uninstall:
 apply-istio:
     kubectl apply -f k8s/istio/
 
-test:
-    # Add testing commands here
-
 clean:
     helm uninstall your-app || true
     kubectl delete -f k8s/ || true
